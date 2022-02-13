@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+   
+    <h1 style="text-align:center">Counter</h1>
+    <p style="text-align: center;">{{session["count"]}} Times</p>
+    <div style="display: flex; justify-content: center; justify-content: space-evenly;">
+    <form  action="/add2" methods="post">
+    <input type="submit" value="+2" style="background-color: blue; color: white;">
+    </form>
+    <form  action="/destroy_session" methods="post">
+        <input type="submit" value="Reset" style="background-color: Red; color: white;">
+    </form>
+</div>
+
+</body>
+</html>
